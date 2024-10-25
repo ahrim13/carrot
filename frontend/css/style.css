@@ -1,0 +1,41 @@
+@import "reset.css";
+@import "header.css";
+@import "footer.css";
+@import "main.css";
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+    "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+  background-color: #f0f0f0; /* 바깥 여백 배경색 */
+  margin: 0;
+  padding: 0;
+}
+
+header,
+main,
+footer {
+  max-width: 600px; /* 모바일 화면 크기 */
+  margin: 0 auto; /* 콘텐츠를 중앙에 배치 */
+  padding: 10px 20px; /* 기본 패딩 */
+  background-color: #fff;
+}
+
+/* 더 큰 화면에 대한 반응형 스타일 */
+@media (min-width: 768px) {
+  header,
+  main,
+  footer {
+    max-width: 700px; /* 태블릿 화면 크기 */
+    padding: 20px 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  header,
+  main,
+  footer {
+    max-width: 900px; /* 데스크탑 화면 크기 */
+  }
+}

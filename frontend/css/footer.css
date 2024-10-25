@@ -1,0 +1,61 @@
+* footer {
+  position: fixed;
+  bottom: 0;
+  width: 500px;
+  left: 50%; /* 화면의 가운데에 위치 */
+  transform: translateX(-50%); /* 가운데 정렬 유지 */
+  padding-bottom: 30px;
+  padding-top: 10px;
+  border-top: 1px solid #eaeaea;
+  background-color: white;
+  box-shadow: 3px 0 5px rgba(0, 0, 0, 0.1), -3px 0 5px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.footer-block {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer-icons {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px 0 10px;
+  cursor: pointer;
+}
+
+.footer-icons_desc {
+  margin-top: 5px;
+  font-weight: bold;
+  transform: scale(0.7);
+}
+
+.footer-icons_img {
+  width: 30px;
+  transition: transform 0.3s ease; /* 부드럽게 움직이도록 설정 */
+}
+
+.footer-icons_img:hover {
+  transform: translateY(-5px); /* 위로 5px만큼 이동 */
+}
+
+.write-btn {
+  position: absolute;
+  bottom: 120px; /* 푸터의 위쪽에서 50px 위로 이동 */
+  right: 35px; /* 푸터의 오른쪽에서 10px 떨어짐 */
+  background-color: #fe6f0f;
+  color: white;
+  padding: 15px 18px 15px 18px;
+  border-radius: 25px; /* 초기 상태에서 원형 */
+  font-weight: bold;
+  font-size: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  cursor: pointer;
+  text-decoration: none;
+}
