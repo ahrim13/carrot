@@ -2,8 +2,8 @@
   position: fixed;
   bottom: 0;
   width: 500px;
-  left: 50%; /* 화면의 가운데에 위치 */
-  transform: translateX(-50%); /* 가운데 정렬 유지 */
+  left: 50%;
+  transform: translateX(-50%);
   padding-bottom: 30px;
   padding-top: 10px;
   border-top: 1px solid #eaeaea;
@@ -37,21 +37,21 @@
 
 .footer-icons_img {
   width: 30px;
-  transition: transform 0.3s ease; /* 부드럽게 움직이도록 설정 */
+  transition: transform 0.3s ease;
 }
 
 .footer-icons_img:hover {
-  transform: translateY(-5px); /* 위로 5px만큼 이동 */
+  transform: translateY(-5px);
 }
 
 .write-btn {
   position: absolute;
-  bottom: 120px; /* 푸터의 위쪽에서 50px 위로 이동 */
-  right: 35px; /* 푸터의 오른쪽에서 10px 떨어짐 */
+  bottom: 120px;
+  right: 35px;
   background-color: #fe6f0f;
   color: white;
   padding: 15px 18px 15px 18px;
-  border-radius: 25px; /* 초기 상태에서 원형 */
+  border-radius: 25px;
   font-weight: bold;
   font-size: 15px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,

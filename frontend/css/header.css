@@ -27,8 +27,8 @@ header {
 }
 
 .info-bar_icons img {
-  width: 20px; /* 각 아이콘의 너비를 15px로 설정 */
-  margin-left: 5px; /* 아이콘 간의 간격을 설정 */
+  width: 20px;
+  margin-left: 5px;
 }
 
 /* 메뉴바 */
@@ -57,26 +57,26 @@ header {
 }
 
 .menu-bar_loation img:hover {
-  transform: rotate(180deg); /* 180도 회전 */
+  transform: rotate(180deg);
 }
 
 .dropdown {
-  display: none; /* 기본적으로 숨김 */
+  display: none;
   position: absolute;
   top: 100px;
   left: 10;
-  background-color: #333; /* 어두운 배경 색 */
+  background-color: #333;
   color: white; /* 텍스트 색상 */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  border-radius: 8px; /* 둥근 모서리 */
+  border-radius: 8px;
   list-style: none;
   padding: 10px;
   width: 150px;
   height: 100px;
-  opacity: 0; /* 처음에는 숨김 상태 */
-  transition: opacity 0.3s ease, transform 0.3s ease; /* 부드럽게 나타나는 애니메이션 */
-  transform: scaleY(0); /* 축소된 상태에서 시작 */
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: scaleY(0);
 }
 
 .dropdown li {
@@ -85,15 +85,14 @@ header {
   cursor: pointer;
   font-size: 18px;
   display: flex;
-  justify-content: center; /* 수평 중앙 정렬 */
-  align-items: center; /* 수직 중앙 정렬 */
+  justify-content: center;
+  align-items: center;
 }
 
-/* 커서를 화살표에 올렸을 때 드롭다운 메뉴 표시 */
 .menu-bar_loation:hover + .dropdown {
   display: block;
   opacity: 1;
-  transform: scaleY(1); /* 원래 크기로 확장 */
+  transform: scaleY(1);
 }
 
 .menu-bar_icons {
