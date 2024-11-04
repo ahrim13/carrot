@@ -1,6 +1,6 @@
 const calcTime = (timestamp) => {
-  const curTime = new Date().getTime() + 60 * 60 * 1000;
-  const timeDiff = curTime - timestamp;
+  const curTime = new Date().getTime();
+  const timeDiff = curTime - timestamp; // 현재 시간과의 차이를 밀리초 단위로 계산
   const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
   const hours = Math.floor(
     (timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
