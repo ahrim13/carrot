@@ -1,14 +1,18 @@
 const calcTime = (timestamp) => {
-  const curTime = new Date().getTime() - 9 * 60 * 60 * 1000;
-  const time = new Date(curTime - timestamp);
-  const hour = time.getHours();
-  const minute = time.getMinutes();
-  const second = time.getSeconds();
+  const curTime = new Date().getTime();
+  const timeDiff = curTime - timestamp;
+  const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+  const hours = Math.floor(
+    (timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  );
+  const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
 
-  if (hour > 0) return `${hour}시간 전`;
-  else if (minute > 0) return `${minute}분 전`;
-  else if (second > 0) return `${second}초 전`;
-  else "방금 전";
+  if (days > 0) return `${days}일 전`;
+  else if (hours > 0) return `${hours}시간 전`;
+  else if (minutes > 0) return `${minutes}분 전`;
+  else if (seconds > 0) return `${seconds}초 전`;
+  else return "방금 전";
 };
 
 const formatPrice = (price) => {
