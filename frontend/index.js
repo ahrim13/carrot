@@ -1,5 +1,5 @@
 const calcTime = (timestamp) => {
-  const curTime = new Date().getTime();
+  const curTime = new Date().getTime() + 60 * 60 * 1000;
   const timeDiff = curTime - timestamp;
   const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
   const hours = Math.floor(
